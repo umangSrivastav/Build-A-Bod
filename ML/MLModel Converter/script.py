@@ -27,7 +27,7 @@ with tf.Graph().as_default() as g:
 
 """ CONVERT TF TO CORE ML """
 # Model Shape
-input_tensor_shapes = {"input:0":[1,224,224,3]} 
+input_tensor_shapes = {"input:0":[1,224,224,3], "MobilenetV1/Conv2d_0/weights:0":[3, 3, 3, 16], "MobilenetV1/Conv2d_0/weights:0":[3, 3, 3, 16], "MobilenetV1/Conv2d_0/weights/read:0":[3, 3, 3, 16], "final_training_ops/weights/final_weights/read:0":[1001, 2], "final_training_ops/biases/final_biases/read:0":[2, 1]} 
 # Input Name
 image_input_name = ['input:0']
 # Output CoreML model path
