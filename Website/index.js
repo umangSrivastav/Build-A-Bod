@@ -6,19 +6,19 @@ function scrollto(div)
  },'slow');
 }
 
-let backgroundCircles = document.querySelectorAll('.circle');
+let backgroundLogos = document.querySelectorAll('.logo');
 let arrows = document.querySelectorAll('.fa');
-let webLinks = document.querySelectorAll('#webLink');
+let webLinks = document.querySelectorAll('.code');
 console.log(webLinks);
 
-backgroundCircles.forEach(circle => {
-  function growCircle(scaleFactor, color) {
+backgroundLogos.forEach(logo => {
+  function growLogo(scaleFactor, color) {
     anime({
-      targets: circle,
+      targets: logo,
       backgroundColor: color,
       // easing: 'easeInOutQuad',
       scale: 1.8,
-      delay: function(circle, i, l) {
+      delay: function(logo, i, l) {
         return i * 100;
       }
     });
@@ -26,22 +26,22 @@ backgroundCircles.forEach(circle => {
 
   function enterButton() {
     anime({
-      targets: circle,
-      backgroundColor: '#A3A9AA',
-      scale: 2.1
+      targets: logo,
+      backgroundColor: '#2e3131',
+      scale: 1.9
     });
   }
   function leaveButton() {
     anime({
-      targets: circle,
+      targets: logo,
       backgroundColor: '#ececec',
       scale: 1.8
     });
   }
-  circle.addEventListener('mouseenter', enterButton, false);
-  circle.addEventListener('mouseleave', leaveButton, false);
+  logo.addEventListener('mouseenter', enterButton, false);
+  logo.addEventListener('mouseleave', leaveButton, false);
   // panel.addEventListener('click', clickButton, false);
-  growCircle(2, '#ececec');
+  growLogo(2, '#ececec');
 
 })
 
@@ -70,21 +70,19 @@ arrows.forEach(arrow => {
   arrow.addEventListener('mouseleave', leaveButton, false);
 })
 
-webLinks.forEach(webLink => {
-  anime({
-    target: webLink,
-    loop: true,
-    scale: 3,
-    backgroundColor: '#26c281'
-  });
-
-  function enterButton() {
-    anime({
-      target: webLink,
-      scale: 3
-    })
-    console.log("SHOULD WORK")
-
-  }
-  webLink.addEventListener('mouseenter', enterButton, false);
-})
+// code.forEach(link => {
+//   anime({
+//     target: webLink,
+//     loop: true,
+//     scale: 3,
+//     backgroundColor: '#26c281'
+//   });
+//   function enterButton() {
+//     anime({
+//       target: link,
+//       scale: 3
+//     });
+//   }
+//
+//   link.addEventListener('mouseenter', enterButton, false);
+// })
