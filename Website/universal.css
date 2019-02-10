@@ -21,8 +21,8 @@ body {
   left: 50%;
   margin-top: -50px;
   margin-left: -100px; */
-  margin-top: 15%;
-  margin-left: 44%;
+  margin-top: 15.5%;
+  margin-left: 43.5%;
 }
 .img {
   width: 200px;
@@ -47,7 +47,7 @@ i {
 }
 
 #a2 {
-  margin-top: 40%;
+  margin-top: 43%;
 }
 
 .wrapper {
@@ -65,4 +65,17 @@ i {
 
 .word {
   z-index: 999;
+}
+
+#Github {
+  margin-top: 33%;
+  color: white;
+  font-family: 'quark';
+  font-size: 100px;
+  text-align: center;
+  text-shadow: 0px 0px 150px #fff;
+}
+
+a {
+  color: white;
 }
