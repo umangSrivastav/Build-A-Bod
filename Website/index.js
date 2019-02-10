@@ -69,20 +69,3 @@ arrows.forEach(arrow => {
   arrow.addEventListener('mouseenter', enterButton, false);
   arrow.addEventListener('mouseleave', leaveButton, false);
 })
-
-// code.forEach(link => {
-//   anime({
-//     target: webLink,
-//     loop: true,
-//     scale: 3,
-//     backgroundColor: '#26c281'
-//   });
-//   function enterButton() {
-//     anime({
-//       target: link,
-//       scale: 3
-//     });
-//   }
-//
-//   link.addEventListener('mouseenter', enterButton, false);
-// })
