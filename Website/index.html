@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<title> </title>
+<link rel="stylesheet" href = "universal.css">
+<link href="https://fonts.googleapis.com/css?family=Baloo|Share" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class = "circle"> </div>
+
+<div id="p1">
+  <a id="landing" class="smooth"></a>
+  <div class = "wrapper">
+
+    <div class = "word">
+      Build
+    </div>
+
+    <div class = "word">
+      &nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;
+    </div>
+
+    <div class = "word">
+    &nbsp;Bod
+    </div>
+
+  </div>
+  <a href="#about">
+    <i id = "a1" class="fa fa-angle-double-down"></i>
+  </a>
+</div>
+
+<div id="p2">
+  <a id="about" class = "smooth"></a>
+
+<a href="#download">
+  <i id = "a2" class="fa fa-angle-double-down"></i>
+</a>
+</div>
+
+<div id="p3">
+  <a id="download" class = "smooth"></a>
+  <div id = "Github">
+    Check out our code
+    <br />
+    <a href="https://github.com/adityaramkumar/Build-A-Bod" id = "webLink"> here</a>
+  </div>
+
+</div>
+
+<script src="anime-master/anime.min.js"> </script>
+<script src="index.js"> </script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+function scrollto(div)
+{
+ $('html,body').animate(
+ {
+  scrollTop: $("#"+div).offset().top
+ },'slow');
+}
+</script>
