@@ -11,18 +11,14 @@ body {
   overflow: hidden;
 }
 
-.circle {
+.logo {
   height: 200px;
   width: 200px;
   background-color: #282C34;
   border-radius: 50%;
-  /* position: fixed; */
-  /* top: 40%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -100px; */
-  margin-top: 15.5%;
+  margin-top: 7%;
   margin-left: 43.5%;
+  shadow: 0px 0px 150px #000;
 }
 .img {
   width: 200px;
@@ -33,6 +29,16 @@ body {
 #p2 {
   height: 1000px;
 }
+
+#aboutText {
+  width: 80%;
+  padding-top: 6%;
+  margin-left: 7.5%;
+  font-size: 40px;
+  font-family: 'quark';
+  text-shadow: 0px 0px 200px #fff;
+}
+
 #p3 {
   height: 1000px;
 }
@@ -43,24 +49,24 @@ i {
 }
 
 #a1 {
-  margin-top: 10%;
+  /* margin-bottom: 10%; */
 }
 
 #a2 {
-  margin-top: 43%;
+  margin-top: 8%;
 }
 
 .wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   /* position: fixed; */
   /* top: 45%; */
-  margin-top: -13%;
   width: 80%;
-  margin-left: 9.5%;
+  margin-top: 5%;
+  margin-left: 10%;
   font-family: 'quark';
   font-size: 200px;
-  text-shadow: 0px 0px 80px #fff;
+  text-shadow: 0px 0px 100px #000;
 }
 
 .word {
